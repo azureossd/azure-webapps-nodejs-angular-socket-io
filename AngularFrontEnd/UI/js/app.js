@@ -2,7 +2,7 @@ var app = angular.module('testchat', ['ngMaterial', 'LocalStorageModule', 'btfor
 
 app.service('SocketService', ['socketFactory', function SocketService(socketFactory) {
     return socketFactory({
-        ioSocket: io.connect('http://localhost:3000')
+        ioSocket: io.connect('ws://edisga-socketserver.azurewebsites.net/')
     });
 }]);
 
